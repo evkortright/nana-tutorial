@@ -6,8 +6,8 @@ pipeline {
   stage("build") {
    steps {
     echo 'building the application ...'
-    cd
-    ls
+    sh "cd"
+    sh "ls"
    }
   }
 
