@@ -6,8 +6,10 @@ pipeline {
   stage("build") {
    steps {
     echo 'building the application ...'
-    sh "cd /Users/ekortright/courses/Painless_v8_4/src"
-    sh "ls"
+    sh '''
+     cd /Users/ekortright/courses/Painless_v8_4/src
+     ls
+    '''
    }
   }
 
